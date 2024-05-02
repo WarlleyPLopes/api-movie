@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 const knex = require("../database/knex");
 const AppError = require("../utils/AppError");
 const { compare } = require("bcryptjs");
@@ -33,20 +31,3 @@ class SessionsController {
 }
 
 module.exports = SessionsController;
-=======
-=======
->>>>>>> f2bd44168aebbf3db3977017a0e22b592be1f609
-class SessionsController {
-    async create(request, response){
-        const {email,password} = request.body;
-        
-        return response.json({email, password})
-    }
-}
-
-<<<<<<< HEAD
-module.exports = SessionsController
->>>>>>> f2bd441 (update)
-=======
-module.exports = SessionsController
->>>>>>> f2bd44168aebbf3db3977017a0e22b592be1f609
